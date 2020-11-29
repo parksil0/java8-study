@@ -2,7 +2,6 @@ import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 
 public class Lambda_Expression {
-
     public static void main(String[] args) {
         Lambda_Expression test = new Lambda_Expression();
         test.run();
