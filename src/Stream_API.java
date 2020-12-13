@@ -1,6 +1,5 @@
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -44,7 +43,7 @@ public class Stream_API {
         * list 안에 있는 요소들을 모두 빼준다.(flatting)
         * */
         System.out.println("두 수업 목록에 들어있는 모든 수업 아이디 출력");
-        davidEvent.stream().flatMap(Collection::stream)
+        davidEvent.stream().flatMap(onlineClasses -> onlineClasses.stream())
                 .forEach(c -> System.out.println(c.getTitle()));
 
         System.out.println("10부터 1씩 증가하는 무제한 스트림 중에서 앞에 10개 빼고 최대 10개 까지만");
